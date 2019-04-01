@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  width: 100%;
+  color: #626262;
+  background-color: #FAFAFA;
+}
+
+.form-control:focus,
+.btn:focus {
+  box-shadow: none;
+}
+
+.align-center {
+  margin: 0 auto;
+}
+
+.btn-yellow {
+  color: #FFF;
+  background-color: #FFDB63;
+  border-color: #FFDB63;
+}
+
+.btn-yellow:hover {
+  color: #FFF;
+  background-color: #e5c559;
+  border-color: #e5c559;
+}
+
+.btn-purple {
+  color: #b79ae9;
+  font-weight: 600;
+}
+
+.btn-purple:hover{
+  color:#a48ad1;
+}
+
+.search .dropdown-menu {
+  min-width: 100%;
+  margin: -1px 0;
+  border-color: #ced4da;
+  border-radius: 0px;
+}
+
+.search .dropdown-menu .dropdown-item{
+  color: #bbb;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.search .dropdown-menu .dropdown-item.active,
+.search .dropdown-menu .dropdown-item:active {
+  color: #aaa;
+  font-weight: 600;
+}

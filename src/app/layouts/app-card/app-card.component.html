@@ -1,0 +1,37 @@
+<div class="card">
+  <div class="card-header" id="headingOne">
+    <div class="d-flex justify-content-between">
+      <h4 class="title-result">
+        <img [src]="item.image" [alt]="[item.title]">
+        {{ item.title }}
+      </h4>
+      <button class="btn btn-purple" type="button"
+        data-toggle="collapse"
+        [attr.data-target]="'#collapse' + item.id"
+        [attr.aria-controls]="'collapse' + item.id"
+        [attr.aria-expanded]="false"
+        (click)="onToggleCard()">
+          {{ collapseHeaderText }}
+          <span class="d-none d-sm-inline">detalhe da ação </span>
+          <i [ngClass]="collapseHeaderIcon" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+
+  <div [id]="'collapse' + item.id" class="collapse">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-10">
+          <p class="description-result">
+            {{ item.description }}
+          </p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-2">
+          <button class="btn btn-yellow btn-lg" type="button" data-toggle="modal" data-target="#modalVerMais">
+            VER MAIS
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

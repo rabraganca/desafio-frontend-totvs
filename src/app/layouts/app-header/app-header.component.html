@@ -1,0 +1,29 @@
+<div class="header-wrap">
+  <div class="container header-content">
+    <div class="logo">
+      <img src="../../../assets/images/logo-totvs.png" alt="Totvs">
+    </div>
+
+    <div class="search">
+      <form>
+        <div class="form-row">
+          <div class="col-auto align-center">
+            <div class="input-group">
+
+              <input class="input-search form-control form-control-lg" type="text" id="search"
+                    autocomplete="off"
+                    [(ngModel)]="stringSearch"
+                    [typeahead]="hoteis"
+                    typeaheadOptionField="title"
+                    (typeaheadOnSelect)="searchSelectedOption($event)"
+                    [ngModelOptions]="{standalone: true}">
+              <div class="input-group-prepend">
+                <button class="btn btn-lg btn-search btn-yellow" (click)="searchHoteis(stringSearch)"><i class="fa fa-search" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

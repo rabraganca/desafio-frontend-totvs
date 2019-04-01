@@ -1,0 +1,49 @@
+.header-wrap {
+  height: 320px;
+  background: rgb(82,121,231);
+  background-image: linear-gradient(to right, rgba(82,121,231,1), rgba(33,60,222,1));
+  text-align: center;
+}
+
+.header-wrap:after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  background: url(../../../assets/images/contorno.svg) repeat-x;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  top: 25px;
+}
+
+.logo {
+  height: auto;
+  text-align: center;
+}
+
+.logo img {
+  padding: 5% 0;
+}
+
+.header-content {
+  z-index: 1;
+  position: relative;
+}
+
+.input-search {
+  text-transform: uppercase;
+  border-color: #ced4da;
+  border-right-color: #FFF;
+  border-radius: 0.15rem;
+  font-weight: 600;
+  color: #bbb;
+}
+
+.btn-search {
+  border-top-right-radius: 0.1rem !important;
+  border-bottom-right-radius: 0.1rem !important;
+}
+
+.header-content {
+  padding-bottom: 5%;
+}
